@@ -16,7 +16,7 @@ object BreastCancerLrPipeline extends WisconsinWrapper {
 
     import org.apache.spark.ml.feature.StringIndexer
 
-     val dataSet = buildDataFrame(dataSetPath + args(0) + ".csv")
+     val dataSet = buildDataFrame(dataSetPathLr + args(0) + ".csv")
 
     //def setInputCols(value: Array[String]): VectorAssembler.this.type
     //def setOutputCol(value: String): VectorAssembler.this.type

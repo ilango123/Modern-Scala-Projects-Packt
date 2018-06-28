@@ -16,7 +16,7 @@ object BreastCancerRfPipeline extends WisconsinWrapper {
 
             import org.apache.spark.ml.feature.StringIndexer
 
-            val dataSet: DataFrame = buildDataFrame(dataSetPath + args(0) + ".csv")
+            val dataSet: DataFrame = buildDataFrame(dataSetPathRf + args(0) + ".csv")
 
             //Split the dataset in two. 85% of the dataset becomes the Training (data)set and 15% becomes the testing (data) set
             val splitDataSet: Array[org.apache.spark.sql.Dataset[org.apache.spark.sql.Row]] = dataSet.randomSplit(Array(0.85, 0.15), 98765L)

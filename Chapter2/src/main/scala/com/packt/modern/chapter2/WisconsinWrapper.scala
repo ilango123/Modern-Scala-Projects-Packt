@@ -19,7 +19,9 @@ trait WisconsinWrapper {
 
 
   //The path to the dataset file
-  val dataSetPath = "C:\\Users\\Ilango\\Documents\\Packt\\DevProjects\\Chapter2\\"
+  val dataSetPathLr = "C:\\Users\\Ilango\\Documents\\Packt\\DevProjects\\Chapter2\\"
+
+  val dataSetPathRf = "C:\\Users\\Ilango\\Documents\\Packt\\DevProjects\\Chapter2\\"
 
   val bcwFeatures_IndexedLabel = ("features","bcw-diagnoses-column", "label")
 
